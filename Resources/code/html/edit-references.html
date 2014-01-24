@@ -1,0 +1,30 @@
+<script>
+    /* making the list of references
+    $('#edit-references-form').submit(function(e) {
+	    if (length($('#references-list')) < length(database references)) {
+		    $(document.createElement('li'))
+		    		.attr('class', 'invisible')
+		    		.html('stuff from database')
+		    		.appendTo('#references-list');
+	    }
+		$('references-list').showViaUI();
+    });
+    */
+</script>
+
+<script>
+$(document).click(function() {
+	$('#li1').toggle('drop', {direction: 'down'});
+	$('#li2').delay(300).toggle('drop', {direction: 'down'});
+});
+</script>
+
+<form id='edit-references-form' method='get'>
+	Insert dropdown box here for book
+	<input type='text' placeholder='e.g. 17'></input>
+</form>
+
+<ul id='references-list'>
+	<li id='li1'>one</li>
+	<li id='li2'>two</li>
+</ul>

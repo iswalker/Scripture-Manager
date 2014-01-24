@@ -1,0 +1,26 @@
+<script src='lawnchair-0.6.1.min.js'></script>
+<script src='lawnchair-adapter-webkit-sqlite-0.6.1.js'></script>
+<script>
+var database;
+
+function load() {
+	database = new Lawnchair({table:'testtable', adaptor:'webkit'}, function(){});
+	database.save({key:'One',
+    		chapters:[{key:'1', verses:12},
+    				  {key:'2', verses:[1,2,4]}
+    				 ]
+    		}, function(obj){
+        console.log(obj);
+	});
+}
+
+function check() {
+	database = Lawnchair('testtable', function(){});
+	database.get('One', function(obj) {
+	    $('#jsonThing').html(obj.chapters[1].verses[1]);
+	});
+}
+
+</script>
+
+<p id='#jsonThing' onload='load()' onclick='check()'>Try me</p>
