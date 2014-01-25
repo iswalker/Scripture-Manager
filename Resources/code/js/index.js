@@ -3,7 +3,7 @@ var $tabs;
 
 $(function() {
 	var $head = $('body');
-	$head.html($head.html() + '<script src="/plug-ins/jquery/jquery-ui-1.10.3.js"></script>');
+	$head.html($head.html() + '');
 
 	var tabText = new Array();
 

@@ -1,0 +1,33 @@
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<title>Scripture Manager </title>
+
+	<!--jquery plug-in-->
+	<script src='/plug-ins/jquery/jquery-1.10.2.min.js'></script>
+	<!--jquery ui plug-ins-->
+	<link rel='stylesheet' href='/plug-ins/jquery/jquery-ui-1.10.3.min.css' />
+	<script src='/plug-ins/jquery/jquery-ui-1.10.3.min.js'></script>
+	<!--lawnchair json plug-ins-->
+	<script src='/plug-ins/lawnchair/lawnchair-0.6.1.min.js'></script>
+	<script src='/plug-ins/lawnchair/lawnchair-adapter-webkit-sqlite-0.6.1.js'></script>
+
+	<!--format loading-->
+	<script src='/code/js/initial-load.js'></script>
+	<!--database functionality loading-->
+	<script src='/code/js/database-manage.js'></script>
+</head>
+
+<body onload='load()' onclick='check()'>
+	<div id='tabs'>
+	  <ul>
+	    <li><a href='#tabs-1'>Edit</a></li>
+	    <li><a href='#tabs-2'>Stats</a></li>
+	    <li><a href='#tabs-3'>Search</a></li>
+	  </ul>
+	  <div id='tabs-1'></div>
+	  <div id='tabs-2'></div>
+	  <div id='tabs-3'></div>
+	</div>
+</body>
+</html>

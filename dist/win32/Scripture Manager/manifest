@@ -1,0 +1,20 @@
+#appname: Scripture Manager
+#appid: com.isaacwalker.scripturemanager
+#guid: 474780be-5d24-459e-a638-750dc798b707
+#version: 1.0
+#image: icon.png
+#publisher: iswalker
+#url: http://scripturemanager.weebly.com/
+runtime: 1.3.1-beta
+app: 1.3.1-beta
+codec: 1.3.1-beta
+database: 1.3.1-beta
+filesystem: 1.3.1-beta
+media: 1.3.1-beta
+monkey: 1.3.1-beta
+network: 1.3.1-beta
+platform: 1.3.1-beta
+process: 1.3.1-beta
+python: 1.3.1-beta
+ui: 1.3.1-beta
+worker: 1.3.1-beta
