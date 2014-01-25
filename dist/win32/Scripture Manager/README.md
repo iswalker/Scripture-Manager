@@ -1,2 +1,0 @@
-Scripture-Manager
-=================
